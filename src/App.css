@@ -1,1 +1,35 @@
+.simpson{
+    background-color: whitesmoke;
+}
+.rikiMorty{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rikiMorty div{
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+
+}
+.rikiMorty h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.historyRikyMorty h2{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-right: 50px;
+}
+.historyRikyMorty img{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
