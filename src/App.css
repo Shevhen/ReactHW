@@ -1,1 +1,19 @@
+.user{
+    display: flex;
+    justify-content: space-between;
+    border: solid black 2px;
+    width: 45%;
+    background-color: palegoldenrod;
 
+    border-radius: 0px 30px 0px 30px;
+    margin: 5px;
+
+
+}
+.user button{
+    border-radius: 0px 30px 0px 30px;
+}
+.user button:hover{
+    background-color: mediumseagreen;
+    transition: 1s;
+}
