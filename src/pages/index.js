@@ -1,0 +1,5 @@
+export * from './notFoundPage/NotFoundPage'
+export * from './todoPage/TodoPage'
+export * from './albumsPage/AlbumsPage'
+export * from './commentsPage/CommentsPage'
+export * from './postFromCommentPage/PostFromCommentPage'

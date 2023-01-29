@@ -1,0 +1,24 @@
+.comment button{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    border: white;
+}
+.comment button:hover{
+    background-color: cornsilk;
+}
+.comment button div h4{
+    display: flex;
+    justify-content: right;
+}
+.comment button div h5,h3{
+    display: flex;
+    justify-content: start;
+}
+.comment button div{
+    margin: 5px;
+}
