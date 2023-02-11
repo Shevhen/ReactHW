@@ -1,7 +1,7 @@
 import './App.css';
 import {UserForm, Users} from "./components";
 import {useEffect, useState} from "react";
-import {userServices} from "./services";
+import {carServices, userServices} from "./services";
 import {Comments, CommentsForm} from "./components/comments";
 
 
@@ -15,32 +15,37 @@ import {Comments, CommentsForm} from "./components/comments";
 //         Реалізувати створення, видалення та оновлення машин
 
 const App = () => {
-  const [user, setUser]=useState([])
+  // const [user, setUser]=useState([])
+  //
+  // useEffect(()=>{
+  //   userServices.getAll().then((data)=>
+  //       setUser(data.data)
+  //   )
+  // },[])
+  //
+  //   const [comments, setComments] = useState([])
+  //
+  //   useEffect(()=>{
+  //       userServices.getAllComments().then((data)=> {
+  //           console.log(data.data)
+  //           setComments(data.data)
+  //       })
+  //   },[])
 
-  useEffect(()=>{
-    userServices.getAll().then((data)=>
-        setUser(data.data)
-    )
-  },[])
-
-    const [comments, setComments] = useState([])
+    let [Cars, setCars] = useState([])
 
     useEffect(()=>{
-        userServices.getAllComments().then((data)=> {
-            console.log(data.data)
-            setComments(data.data)
-        })
+        carServices.getAll().then(({data})=>console.log(data))
     },[])
-
 
     return (
     <div className="App">
-      <UserForm setUser={setUser}/>
-        <hr/>
-      <Users user={user}/>
-      <hr/>
-        <CommentsForm setComments={setComments}/>
-      <Comments comments={comments}/>
+      {/*<UserForm setUser={setUser}/>*/}
+      {/*  <hr/>*/}
+      {/*<Users user={user}/>*/}
+      {/*<hr/>*/}
+      {/*  <CommentsForm setComments={setComments}/>*/}
+      {/*<Comments comments={comments}/>*/}
     </div>
   );
 }

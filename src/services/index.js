@@ -1,5 +1,5 @@
 export * from './users/userServices'
 export * from './users/axiosServices'
 
-export * from './cars/axiosServices'
-export * from './cars/userServices'
+export * from './cars/axiosServicesCar'
+export * from './cars/carServices'
