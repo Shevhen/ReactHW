@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {App} from './App';
+import {BrowserRouter} from "react-router-dom";
+import {StateProvider} from "./hoc/StateProvider";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    <StateProvider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </StateProvider>
   // <React.StrictMode>
   // </React.StrictMode>
 );
